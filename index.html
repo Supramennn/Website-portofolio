@@ -291,6 +291,7 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
         }
 
         .article-body h4 {
@@ -310,6 +311,40 @@
 
         .article-body ul li {
             margin-bottom: 10px;
+        }
+
+        /* Articles Navigation */
+        .articles-nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .articles-nav button {
+            background-color: #1e3c72;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .articles-nav button:hover {
+            background-color: #2a5298;
+        }
+
+        .articles-nav button.active {
+            background-color: #0f2648;
+        }
+
+        .article-container {
+            display: none;
+        }
+
+        .article-container.active {
+            display: block;
         }
 
         /* Footer */
@@ -545,122 +580,101 @@
     <section id="article" style="background-color: #ffffff;">
         <div class="container">
             <h2 class="section-title">Artikel</h2>
-            <div class="article-content">
-                <h3 class="section-subtitle">Akhlaq Terhadap Kedua Orang Tua: Panduan Berbakti dalam Islam</h3>
-                <div class="article-body">
-                    <h4>Pendahuluan</h4>
-                    <p>Hubungan antara anak dan orang tua merupakan ikatan suci yang diberikan Allah SWT sebagai nikmat
-                        terindah dalam kehidupan. Islam mengajarkan bahwa berbakti kepada orang tua adalah salah satu
-                        kewajiban mulia yang tidak dapat ditawar-tawar. Melalui artikel ini, kita akan membahas secara
-                        mendalam tentang etika dan akhlaq seorang anak terhadap kedua orang tuanya.</p>
+            
+            <div class="articles-nav">
+                <button class="article-btn active" onclick="showArticle(0)">Akhlaq Terhadap Orang Tua</button>
+                <button class="article-btn" onclick="showArticle(1)">Perkembangan Teknologi</button>
+            </div>
+            
+            <div class="article-container active" id="article-0">
+                <div class="article-content">
+                    <h3 class="section-subtitle">Akhlaq Terhadap Kedua Orang Tua: Panduan Berbakti dalam Islam</h3>
+                    <div class="article-body">
+                        <h4>Pendahuluan</h4>
+                        <p>Hubungan antara anak dan orang tua merupakan ikatan suci yang diberikan Allah SWT sebagai nikmat
+                            terindah dalam kehidupan. Islam mengajarkan bahwa berbakti kepada orang tua adalah salah satu
+                            kewajiban mulia yang tidak dapat ditawar-tawar. Melalui artikel ini, kita akan membahas secara
+                            mendalam tentang etika dan akhlaq seorang anak terhadap kedua orang tuanya.</p>
 
-                    <h4>A. Berbuat Baik kepada Orang Tua</h4>
-                    <p>Berbuat baik kepada orang tua bukanlah sekadar formalitas, melainkan bentuk pengabdian yang
-                        mendalam dan tulus. Beberapa cara konkret untuk berbuat baik kepada orang tua meliputi:</p>
-                    <ul>
-                        <li>Menghormati dan memuliakan mereka dalam setiap ucapan dan perbuatan</li>
-                        <li>Memberikan pelayanan dengan penuh kasih sayang</li>
-                        <li>Memenuhi kebutuhan hidup mereka baik secara materi maupun spiritual</li>
-                        <li>Mendengarkan nasihat dan pandangan mereka dengan rendah hati</li>
-                        <li>Mendahulukan kepentingan mereka di atas kepentingan pribadi</li>
-                    </ul>
+                        <h4>A. Berbuat Baik kepada Orang Tua</h4>
+                        <p>Berbuat baik kepada orang tua bukanlah sekadar formalitas, melainkan bentuk pengabdian yang
+                            mendalam dan tulus. Beberapa cara konkret untuk berbuat baik kepada orang tua meliputi:</p>
+                        <ul>
+                            <li>Menghormati dan memuliakan mereka dalam setiap ucapan dan perbuatan</li>
+                            <li>Memberikan pelayanan dengan penuh kasih sayang</li>
+                            <li>Memenuhi kebutuhan hidup mereka baik secara materi maupun spiritual</li>
+                            <li>Mendengarkan nasihat dan pandangan mereka dengan rendah hati</li>
+                            <li>Mendahulukan kepentingan mereka di atas kepentingan pribadi</li>
+                        </ul>
 
-                    <h4>B. Menjaga Lisan dan Perbuatan Terhadap Kedua Orang Tua</h4>
-                    <p>Menjaga lisan dan perbuatan merupakan aspek krusial dalam berbakti kepada orang tua. Beberapa
-                        etika yang perlu diperhatikan:</p>
-                    <ul>
-                        <li>Berbicara dengan lemah lembut dan tidak membentak</li>
-                        <li>Menghindari ucapan kasar atau perkataan yang menyakitkan</li>
-                        <li>Bersikap sabar ketika mereka dalam keadaan lemah atau pikun</li>
-                        <li>Menghindari ekspresi wajah yang menunjukkan rasa jengkel atau tidak suka</li>
-                        <li>Senantiasa menampakkan raut muka yang penuh kasih dan pengertian</li>
-                    </ul>
+                        <h4>B. Menjaga Lisan dan Perbuatan Terhadap Kedua Orang Tua</h4>
+                        <p>Menjaga lisan dan perbuatan merupakan aspek krusial dalam berbakti kepada orang tua. Beberapa
+                            etika yang perlu diperhatikan:</p>
+                        <ul>
+                            <li>Berbicara dengan lemah lembut dan tidak membentak</li>
+                            <li>Menghindari ucapan kasar atau perkataan yang menyakitkan</li>
+                            <li>Bersikap sabar ketika mereka dalam keadaan lemah atau pikun</li>
+                            <li>Menghindari ekspresi wajah yang menunjukkan rasa jengkel atau tidak suka</li>
+                            <li>Senantiasa menampakkan raut muka yang penuh kasih dan pengertian</li>
+                        </ul>
 
-                    <h4>C. Mendoakan Kedua Orang Tua</h4>
-                    <p>Mendoakan orang tua merupakan bentuk bakti yang paling mulia, terutama ketika mereka telah tiada.
-                        Beberapa amalan doa yang dianjurkan:</p>
-                    <ul>
-                        <li>Memohon ampunan dan rahmat Allah SWT untuk mereka</li>
-                        <li>Mendoakan mereka dalam setiap sholat</li>
-                        <li>Melakukan sedekah dan kebaikan yang pahalanya dihadiahkan kepada mereka</li>
-                        <li>Mendo'akan mereka dengan doa yang baik, seperti: "Ya Allah, ampunilah kedua orang tuaku dan
-                            sayangilah mereka sebagaimana mereka menyayangiku di waktu kecil"</li>
-                    </ul>
+                        <h4>C. Mendoakan Kedua Orang Tua</h4>
+                        <p>Mendoakan orang tua merupakan bentuk bakti yang paling mulia, terutama ketika mereka telah tiada.
+                            Beberapa amalan doa yang dianjurkan:</p>
+                        <ul>
+                            <li>Memohon ampunan dan rahmat Allah SWT untuk mereka</li>
+                            <li>Mendoakan mereka dalam setiap sholat</li>
+                            <li>Melakukan sedekah dan kebaikan yang pahalanya dihadiahkan kepada mereka</li>
+                            <li>Mendo'akan mereka dengan doa yang baik, seperti: "Ya Allah, ampunilah kedua orang tuaku dan
+                                sayangilah mereka sebagaimana mereka menyayangiku di waktu kecil"</li>
+                        </ul>
 
-                    <h4>D. Ridho dan Murka Allah Tergantung Ridho dan Murkanya Orang Tua</h4>
-                    <p>Islam mengajarkan bahwa kunci kebahagiaan dan keberkahan hidup seseorang sangat terkait dengan
-                        ridho (kerelaan) orang tua. Beberapa hal penting yang perlu diperhatikan:</p>
-                    <ul>
-                        <li>Ridho orang tua merupakan pintu utama mendapatkan ridho Allah SWT</li>
-                        <li>Sebaliknya, membuat orang tua murka dapat mengakibatkan murka Allah</li>
-                        <li>Berusaha keras untuk selalu membuat orang tua senang dan bahagia</li>
-                        <li>Meminta maaf apabila pernah melakukan kesalahan</li>
-                    </ul>
+                        <h4>D. Ridho dan Murka Allah Tergantung Ridho dan Murkanya Orang Tua</h4>
+                        <p>Islam mengajarkan bahwa kunci kebahagiaan dan keberkahan hidup seseorang sangat terkait dengan
+                            ridho (kerelaan) orang tua. Beberapa hal penting yang perlu diperhatikan:</p>
+                        <ul>
+                            <li>Ridho orang tua merupakan pintu utama mendapatkan ridho Allah SWT</li>
+                            <li>Sebaliknya, membuat orang tua murka dapat mengakibatkan murka Allah</li>
+                            <li>Berusaha keras untuk selalu membuat orang tua senang dan bahagia</li>
+                            <li>Meminta maaf apabila pernah melakukan kesalahan</li>
+                        </ul>
 
-                    <h4>Penutup</h4>
-                    <p>Berbakti kepada orang tua bukanlah sekadar kewajiban, melainkan ibadah yang memiliki nilai
-                        spiritual tinggi. Setiap detik pengabdian kita kepada mereka adalah investasi keberkahan yang
-                        tak ternilai.</p>
-                    <p><em>"Surgamu terletak di bawah telapak kaki ibumu."</em></p>
+                        <h4>Penutup</h4>
+                        <p>Berbakti kepada orang tua bukanlah sekadar kewajiban, melainkan ibadah yang memiliki nilai
+                            spiritual tinggi. Setiap detik pengabdian kita kepada mereka adalah investasi keberkahan yang
+                            tak ternilai.</p>
+                        <p><em>"Surgamu terletak di bawah telapak kaki ibumu."</em></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="article-container" id="article-1">
+                <div class="article-content">
+                    <h3 class="section-subtitle">Perkembangan Teknologi Terkini: Antara Inovasi dan Tantangan</h3>
+                    <div class="article-body">
+                        <h4>Pendahuluan</h4>
+                        <p>Hidup di era digital seperti sekarang ini kadang bikin pusing. Setiap kali buka mata, rasanya selalu ada gadget baru, aplikasi baru, atau tren teknologi baru yang muncul. Gak heran kalau kita kadang merasa tertinggal, padahal baru kemarin rasanya kita update sistem operasi atau beli smartphone keluaran terbaru.</p>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p class="footer-text">© 2025 Noval Suprayoga. Semua Hak Dilindungi.</p>
-            <div class="social-links">
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/novalsuprayoga/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Supramennn"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/novalsuprayoga/"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:novalsuprayoga2511@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <p>Dibuat dengan <i class="fas fa-heart"></i> oleh Noval Suprayoga</p>
-        </div>
-    </footer>
+                        <h4>Dilema Pengguna: Mengikuti atau Tertinggal?</h4>
+                        <p>Saya masih ingat betul gimana rasanya pertama kali megang handphone layar sentuh. Canggih banget rasanya, tapi sekarang? Handphone layar sentuh udah jadi barang sehari-hari, malah kadang bikin gregetan kalau lagi lemot atau hang. Begitulah teknologi, cepat banget berubahnya.</p>
+                        <p>Buat yang belum tau, sekarang ini kita lagi hidup di era yang para ahli sebut sebagai "Revolusi Industri 4.0". Istilah kerennya sih gitu, tapi intinya kita lagi di tengah-tengah perubahan besar yang dipicu oleh berbagai teknologi canggih seperti kecerdasan buatan (AI), Internet of Things (IoT), komputasi awan, dan analisis data besar (big data).</p>
+                        <p>Ngomongin AI, perkembangannya itu luar biasa banget. Dari yang tadinya cuma bisa ngenalin wajah di foto, sekarang udah bisa nulis artikel, bikin gambar, bahkan ngobrol layaknya manusia. Contohnya ChatGPT yang booming banget tahun lalu. Sempat bikin heboh karena kemampuannya yang hampir mendekati manusia.</p>
 
-    <script>
-        // Simple animation for header
-        document.addEventListener('DOMContentLoaded', function () {
-            const header = document.querySelector('header');
-            header.style.opacity = '0';
-            header.style.transform = 'translateY(-20px)';
-            header.style.transition = 'opacity 1s ease, transform 1s ease';
+                        <h4>Sisi Gelap Teknologi yang Jarang Dibahas</h4>
+                        <p>Tapi di balik kemajuan teknologi yang kelihatannya keren ini, ada juga sisi gelapnya yang jarang dibahas. Misalnya soal privasi. Berapa banyak dari kita yang baca dengan teliti syarat dan ketentuan aplikasi sebelum klik "Setuju"? Hampir gak ada kan? Padahal di situ dijelasin kalau data kita bakal dipanen dan dijual ke pihak ketiga.</p>
+                        <p>Belum lagi masalah kesehatan mental. FOMO (Fear of Missing Out) atau ketakutan ketinggalan tren, kecanduan media sosial, cyberbullying, sampai body dysmorphia akibat filter kecantikan, ini semua efek samping dari kemajuan teknologi yang kita nikmati.</p>
+                        <p>"Dulu waktu belum ada internet, kita harus ke perpustakaan kalau mau cari informasi. Sekarang informasi ada di genggaman, tapi malah bikin kita kebanjiran info sampai bingung mana yang benar," kata Pak Budi, dosen Ilmu Komunikasi yang saya temui di seminar teknologi bulan lalu.</p>
 
-            setTimeout(() => {
-                header.style.opacity = '1';
-                header.style.transform = 'translateY(0)';
-            }, 300);
+                        <h4>Masa Depan Teknologi di Indonesia</h4>
+                        <p>Indonesia sebagai negara berkembang dengan populasi besar punya potensi besar dalam adopsi teknologi. Berdasarkan data dari Asosiasi Penyelenggara Jasa Internet Indonesia (APJII), pengguna internet di Indonesia mencapai 73% dari total populasi pada akhir 2023. Angka ini terus meningkat setiap tahunnya.</p>
+                        <p>Startup-startup lokal juga mulai bermunculan dengan inovasi yang gak kalah dari perusahaan global. Gojek dan Tokopedia yang sekarang jadi GoTo, Traveloka, Bukalapak, dan masih banyak lagi unicorn Indonesia yang berkembang pesat.</p>
+                        <p>Tantangannya sekarang adalah bagaimana menyiapkan sumber daya manusia (SDM) yang mumpuni untuk menghadapi perubahan teknologi ini. Kesenjangan digital masih jadi PR besar buat pemerintah. Masih banyak daerah terpencil yang belum terjangkau internet, padahal di kota-kota besar udah pada pake 5G.</p>
 
-            // Animate sections on scroll
-            const sections = document.querySelectorAll('section');
+                        <h4>Kesiapan Menghadapi Gelombang Perubahan</h4>
+                        <p>Jadi, gimana cara kita menghadapi perkembangan teknologi yang begitu cepat ini? Menurut saya, kuncinya ada pada dua hal: adaptasi dan literasi digital.</p>
+                        <p>Adaptasi bukan berarti harus selalu punya gadget terbaru atau update aplikasi terbaru. Tapi lebih ke bagaimana kita bisa menyesuaikan diri dengan perubahan cara kerja dan cara hidup akibat teknologi. Misalnya, belajar skill baru yang relevan dengan era digital.</p>
+                        <p>Sementara literasi digital artinya kita paham betul cara menggunakan teknologi dengan bijak. Bisa memilah informasi yang benar dan yang hoax, tau kapan harus disconnect dari gadget, dan paham risiko serta manfaat dari teknologi yang kita gunakan.</p>
+                        <p>"Teknologi itu seperti pisau bermata dua. Bisa sangat membantu kalau digunakan dengan benar, tapi juga bisa melukai kalau salah pakai," begitu kata Prof. Slamet, pakar teknologi dari Universitas Indonesia yang sempat saya wawancarai tahun lalu.</p>
 
-            const fadeInOnScroll = function () {
-                sections.forEach(section => {
-                    const sectionTop = section.getBoundingClientRect().top;
-                    const windowHeight = window.innerHeight;
-
-                    if (sectionTop < windowHeight * 0.8) {
-                        section.style.opacity = '1';
-                        section.style.transform = 'translateY(0)';
-                    }
-                });
-            };
-
-            sections.forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(20px)';
-                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            });
-
-            window.addEventListener('scroll', fadeInOnScroll);
-            fadeInOnScroll(); // Initial check
-        });
-    </script>
-</body>
-
-</html>
+                        <h4>Penutup</h4>
+                        <p>Perkembangan teknologi memang tidak bisa dihindari. Yang bisa kita lakukan adalah menyikapinya dengan bijak. Tidak anti teknologi, tapi juga tidak jadi budak teknologi. K
