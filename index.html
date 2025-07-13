@@ -322,6 +322,29 @@
             font-style: italic;
             color: #555;
         }
+        
+        /* Video Section */
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .video-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
 
         /* Footer */
         footer {
@@ -775,7 +798,7 @@
             <h2 class="section-title">Opini: Kasus Diklatsar Menwa UNS</h2>
             <div class="article-content">
                 <div class="article-body">
-                    <img src="article-pic2.png" alt="Pemeriksaan kantor sekretariat Menwa UNS oleh Kepolisian" style="width:100%; border-radius:10px; margin-bottom:15px;">
+                    <img src="image_128b61.jpg" alt="Pemeriksaan kantor sekretariat Menwa UNS oleh Kepolisian" style="width:100%; border-radius:10px; margin-bottom:15px;">
                     <p style="text-align: center; font-style: italic; font-size: 0.9em; margin-bottom: 25px;">Petugas dari Kepolisian Resor Kota Surakarta memeriksa kantor sekretariat Resimen Mahasiswa (Menwa) UNS. (Sumber: KOMPAS/NINO CITRA ANUGRAHANTO)</p>
                     
                     <h3>Opini terhadap Kasus Mahasiswa UNS Meninggal saat Diklatsar Menwa</h3>
@@ -799,6 +822,22 @@
                     <h4>Penutup</h4>
                     <p>Insiden ini menjadi pengingat keras bahwa kita perlu mengevaluasi ulang praktik-praktik organisasi kemahasiswaan yang masih menjunjung “tradisi” tanpa akal sehat. Jiwa kepemimpinan dan karakter tidak dibentuk dari kekerasan, tetapi dari pendidikan yang menjunjung nilai, empati, dan tanggung jawab.</p>
                     <p>Jika kampus masih diam, maka publik yang harus bersuara. Karena nyawa mahasiswa bukan harga yang pantas dibayar hanya demi “kedisiplinan”.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" style="background-color: #ffffff;">
+        <div class="container">
+            <h2 class="section-title">Video</h2>
+            <div class="video-container">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>Tugas Pendidikan Agama Islam 2</h4>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>Menyampaikan hadist Larangan mengganggu tetangga dan memperhatikan tetangga</h4>
                 </div>
             </div>
         </div>
