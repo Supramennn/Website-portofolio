@@ -293,13 +293,17 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
 
-        .article-body h4 {
+        .article-body h3, .article-body h4, .article-body h5 {
             color: #1e3c72;
             margin-top: 25px;
             margin-bottom: 15px;
         }
+        
+        .article-body h3 { font-size: 1.3rem; }
+        .article-body h4 { font-size: 1.2rem; }
+        .article-body h5 { font-size: 1.1rem; }
 
-        .article-body p {
+        .article-body p, .article-body blockquote {
             margin-bottom: 15px;
         }
 
@@ -310,6 +314,13 @@
 
         .article-body ul li {
             margin-bottom: 10px;
+        }
+
+        .article-body blockquote {
+            border-left: 4px solid #1e3c72;
+            padding-left: 15px;
+            font-style: italic;
+            color: #555;
         }
 
         /* Footer */
@@ -398,7 +409,6 @@
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
         <div class="container">
             <img src="Picsart_24-09-12_15-19-54-085.png" alt="Noval Suprayoga" class="profile-pic">
@@ -421,7 +431,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">Tentang Saya</h2>
@@ -438,7 +447,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" style="background-color: #eef2f7;">
         <div class="container">
             <h2 class="section-title">Pengalaman Kerja</h2>
@@ -477,7 +485,6 @@
         </div>
     </section>
     
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <h2 class="section-title">Kemampuan & Keahlian</h2>
@@ -520,7 +527,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" style="background-color: #eef2f7;">
         <div class="container">
             <h2 class="section-title">Pendidikan</h2>
@@ -541,22 +547,16 @@
         </div>
     </section>
 
-    <!-- Article Section -->
     <section id="article" style="background-color: #ffffff;">
-        <div class="article-container active" id="article-0">
+        <div class="container">
             <h2 class="section-title">Artikel</h2>
             <div class="article-content">
                 <h3 class="section-subtitle">Akhlaq Terhadap Kedua Orang Tua: Panduan Berbakti dalam Islam</h3>
                 <div class="article-body">
                     <h4>Pendahuluan</h4>
-                    <p>Hubungan antara anak dan orang tua merupakan ikatan suci yang diberikan Allah SWT sebagai nikmat
-                        terindah dalam kehidupan. Islam mengajarkan bahwa berbakti kepada orang tua adalah salah satu
-                        kewajiban mulia yang tidak dapat ditawar-tawar. Melalui artikel ini, kita akan membahas secara
-                        mendalam tentang etika dan akhlaq seorang anak terhadap kedua orang tuanya.</p>
-
+                    <p>Hubungan antara anak dan orang tua merupakan ikatan suci yang diberikan Allah SWT sebagai nikmat terindah dalam kehidupan. Islam mengajarkan bahwa berbakti kepada orang tua adalah salah satu kewajiban mulia yang tidak dapat ditawar-tawar. Melalui artikel ini, kita akan membahas secara mendalam tentang etika dan akhlaq seorang anak terhadap kedua orang tuanya.</p>
                     <h4>A. Berbuat Baik kepada Orang Tua</h4>
-                    <p>Berbuat baik kepada orang tua bukanlah sekadar formalitas, melainkan bentuk pengabdian yang
-                        mendalam dan tulus. Beberapa cara konkret untuk berbuat baik kepada orang tua meliputi:</p>
+                    <p>Berbuat baik kepada orang tua bukanlah sekadar formalitas, melainkan bentuk pengabdian yang mendalam dan tulus. Beberapa cara konkret untuk berbuat baik kepada orang tua meliputi:</p>
                     <ul>
                         <li>Menghormati dan memuliakan mereka dalam setiap ucapan dan perbuatan</li>
                         <li>Memberikan pelayanan dengan penuh kasih sayang</li>
@@ -564,10 +564,8 @@
                         <li>Mendengarkan nasihat dan pandangan mereka dengan rendah hati</li>
                         <li>Mendahulukan kepentingan mereka di atas kepentingan pribadi</li>
                     </ul>
-
                     <h4>B. Menjaga Lisan dan Perbuatan Terhadap Kedua Orang Tua</h4>
-                    <p>Menjaga lisan dan perbuatan merupakan aspek krusial dalam berbakti kepada orang tua. Beberapa
-                        etika yang perlu diperhatikan:</p>
+                    <p>Menjaga lisan dan perbuatan merupakan aspek krusial dalam berbakti kepada orang tua. Beberapa etika yang perlu diperhatikan:</p>
                     <ul>
                         <li>Berbicara dengan lemah lembut dan tidak membentak</li>
                         <li>Menghindari ucapan kasar atau perkataan yang menyakitkan</li>
@@ -575,56 +573,39 @@
                         <li>Menghindari ekspresi wajah yang menunjukkan rasa jengkel atau tidak suka</li>
                         <li>Senantiasa menampakkan raut muka yang penuh kasih dan pengertian</li>
                     </ul>
-
                     <h4>C. Mendoakan Kedua Orang Tua</h4>
-                    <p>Mendoakan orang tua merupakan bentuk bakti yang paling mulia, terutama ketika mereka telah tiada.
-                        Beberapa amalan doa yang dianjurkan:</p>
+                    <p>Mendoakan orang tua merupakan bentuk bakti yang paling mulia, terutama ketika mereka telah tiada. Beberapa amalan doa yang dianjurkan:</p>
                     <ul>
                         <li>Memohon ampunan dan rahmat Allah SWT untuk mereka</li>
                         <li>Mendoakan mereka dalam setiap sholat</li>
                         <li>Melakukan sedekah dan kebaikan yang pahalanya dihadiahkan kepada mereka</li>
-                        <li>Mendo'akan mereka dengan doa yang baik, seperti: "Ya Allah, ampunilah kedua orang tuaku dan
-                            sayangilah mereka sebagaimana mereka menyayangiku di waktu kecil"</li>
+                        <li>Mendo'akan mereka dengan doa yang baik, seperti: "Ya Allah, ampunilah kedua orang tuaku dan sayangilah mereka sebagaimana mereka menyayangiku di waktu kecil"</li>
                     </ul>
-
                     <h4>D. Ridho dan Murka Allah Tergantung Ridho dan Murkanya Orang Tua</h4>
-                    <p>Islam mengajarkan bahwa kunci kebahagiaan dan keberkahan hidup seseorang sangat terkait dengan
-                        ridho (kerelaan) orang tua. Beberapa hal penting yang perlu diperhatikan:</p>
+                    <p>Islam mengajarkan bahwa kunci kebahagiaan dan keberkahan hidup seseorang sangat terkait dengan ridho (kerelaan) orang tua. Beberapa hal penting yang perlu diperhatikan:</p>
                     <ul>
                         <li>Ridho orang tua merupakan pintu utama mendapatkan ridho Allah SWT</li>
                         <li>Sebaliknya, membuat orang tua murka dapat mengakibatkan murka Allah</li>
                         <li>Berusaha keras untuk selalu membuat orang tua senang dan bahagia</li>
                         <li>Meminta maaf apabila pernah melakukan kesalahan</li>
                     </ul>
-
                     <h4>Penutup</h4>
-                    <p>Berbakti kepada orang tua bukanlah sekadar kewajiban, melainkan ibadah yang memiliki nilai
-                        spiritual tinggi. Setiap detik pengabdian kita kepada mereka adalah investasi keberkahan yang
-                        tak ternilai.</p>
+                    <p>Berbakti kepada orang tua bukanlah sekadar kewajiban, melainkan ibadah yang memiliki nilai spiritual tinggi. Setiap detik pengabdian kita kepada mereka adalah investasi keberkahan yang tak ternilai.</p>
                     <p><em>"Surgamu terletak di bawah telapak kaki ibumu."</em></p>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-- Article Section2 -->
-    <section id="article">
+    <section id="article-2" style="background-color: #eef2f7;">
         <div class="container">
-            <h2 class="section-title"> <b>Akhlak terhadap Diri Sendiri</b></h2>
+            <h2 class="section-title">Akhlak terhadap Diri Sendiri</h2>
             <div class="article-content">
                 <div class="article-body">
-                    <h4><b>Pendahuluan</b></h4>
-                    <p>Dalam Islam, pendidikan akhlak memegang peranan penting dalam membentuk manusia yang beriman dan bertakwa. Rasulullah SAW bersabda, “Sesungguhnya aku diutus untuk menyempurnakan akhlak yang mulia” (HR. Ahmad). Akhlak terhadap diri sendiri merupakan dasar dari segala bentuk akhlak, karena seseorang tidak akan mampu berakhlak baik kepada orang lain jika belum memiliki akhlak yang baik terhadap dirinya sendiri. Sayangnya, fenomena degradasi moral di kalangan remaja menjadi bukti bahwa akhlak terhadap diri sendiri belum dipahami dan diterapkan secara utuh.
-
-</p>
-
-                    <h4><b>Konsep Akhlak terhadap Diri Sendiri</b></h4>
-                    <p>
-                        Akhlak terhadap diri sendiri adalah sikap seseorang dalam memperlakukan dirinya secara benar dan proporsional,
-                        sesuai dengan tuntunan syariat. Imam Al-Ghazali dalam Ihya Ulumuddin menjelaskan bahwa menjaga diri dari perbuatan
-                        tercela dan memperbaiki diri menuju kesempurnaan adalah bagian dari ibadah.
-                        Beberapa bentuk akhlak terhadap diri sendiri meliputi:
-                    </p>
+                    <h4>Pendahuluan</h4>
+                    <p>Dalam Islam, pendidikan akhlak memegang peranan penting dalam membentuk manusia yang beriman dan bertakwa. Rasulullah SAW bersabda, “Sesungguhnya aku diutus untuk menyempurnakan akhlak yang mulia” (HR. Ahmad). Akhlak terhadap diri sendiri merupakan dasar dari segala bentuk akhlak, karena seseorang tidak akan mampu berakhlak baik kepada orang lain jika belum memiliki akhlak yang baik terhadap dirinya sendiri. Sayangnya, fenomena degradasi moral di kalangan remaja menjadi bukti bahwa akhlak terhadap diri sendiri belum dipahami dan diterapkan secara utuh.</p>
+                    <h4>Konsep Akhlak terhadap Diri Sendiri</h4>
+                    <p>Akhlak terhadap diri sendiri adalah sikap seseorang dalam memperlakukan dirinya secara benar dan proporsional, sesuai dengan tuntunan syariat. Imam Al-Ghazali dalam Ihya Ulumuddin menjelaskan bahwa menjaga diri dari perbuatan tercela dan memperbaiki diri menuju kesempurnaan adalah bagian dari ibadah. Beberapa bentuk akhlak terhadap diri sendiri meliputi:</p>
                     <ul>
                         <li><b>Menjaga kebersihan dan kesehatan tubuh</b> (QS. Al-Baqarah: 195).</li>
                         <li><b>Menghindari perbuatan maksiat</b> (QS. An-Nur: 30-31).</li>
@@ -632,72 +613,29 @@
                         <li><b>Menjaga harga diri dan kehormatan</b> (QS. Al-Hujurat: 11-12).</li>
                         <li><b>Mengembangkan potensi diri</b> untuk kebaikan.</li>
                     </ul>
-
-                    <h4>
-                        <b>Pentingnya Pendidikan Akhlak Terhadap Diri Sendiri
-                            </b>
-                    </h4>
-                    <p>
-                        Akhlak terhadap diri sendiri tidak hanya menyangkut aspek pribadi,
-                        tetapi juga berdampak sosial.
-                        Seseorang yang mampu menjaga dirinya akan lebih mampu membangun hubungan yang sehat dengan orang lain dan lingkungannya.
-                        Dalam konteks pendidikan, peserta didik yang memahami nilai-nilai akhlak terhadap diri sendiri akan memiliki sikap disiplin, tanggung jawab, 
-                        serta motivasi untuk belajar dan berkembang.
-                    </p>
-
-                    <h4>
-                        <b>
-                        Studi Kasus: Implementasi Akhlak terhadap Diri Sendiri pada Siswa SMA
-                        </b>
-                    </h4>
-                    <p>
-                        Penelitian dilakukan di SMA Negeri X di Jakarta pada 30 siswa kelas XI yang berasal dari latar belakang sosial-ekonomi menengah. Metode yang digunakan adalah observasi, wawancara, dan kuesioner.
-                    </p>
-                    <h4>
-                        <b>
-                        Hasil Temuan :
-                            </b>
-                    </h4>
+                    <h4>Pentingnya Pendidikan Akhlak Terhadap Diri Sendiri</h4>
+                    <p>Akhlak terhadap diri sendiri tidak hanya menyangkut aspek pribadi, tetapi juga berdampak sosial. Seseorang yang mampu menjaga dirinya akan lebih mampu membangun hubungan yang sehat dengan orang lain dan lingkungannya. Dalam konteks pendidikan, peserta didik yang memahami nilai-nilai akhlak terhadap diri sendiri akan memiliki sikap disiplin, tanggung jawab, serta motivasi untuk belajar dan berkembang.</p>
+                    <h4>Studi Kasus: Implementasi Akhlak terhadap Diri Sendiri pada Siswa SMA</h4>
+                    <p>Penelitian dilakukan di SMA Negeri X di Jakarta pada 30 siswa kelas XI yang berasal dari latar belakang sosial-ekonomi menengah. Metode yang digunakan adalah observasi, wawancara, dan kuesioner.</p>
+                    <h4>Hasil Temuan:</h4>
                     <ul>
                         <li>65% siswa menunda waktu belajar.</li>
                         <li>40% siswa kurang percaya diri di depan umum.</li>
                         <li>30% siswa mengalami overthinking atau emosi negatif pada diri sendiri.</li>
                         <li>70% siswa menunjukkan kesadaran untuk berubah.</li>
                     </ul>
-                    <h4>
-                        <b>
-                            Analisis :
-                        </b>
-                    </h4>
-                    <p>
-                        Hasil ini menunjukkan adanya krisis akhlak terhadap diri sendiri yang harus segera ditangani. Penyebabnya antara lain kurangnya penguatan nilai-nilai Islam dalam kehidupan sehari-hari, pengaruh media sosial, serta minimnya bimbingan dari lingkungan sekitar.
-                    </p>
-
-                    <h4>
-                        <b>
-                            Solusi dan Rekomendasi
-                        </b>
-                    </h4>
+                    <h4>Analisis:</h4>
+                    <p>Hasil ini menunjukkan adanya krisis akhlak terhadap diri sendiri yang harus segera ditangani. Penyebabnya antara lain kurangnya penguatan nilai-nilai Islam dalam kehidupan sehari-hari, pengaruh media sosial, serta minimnya bimbingan dari lingkungan sekitar.</p>
+                    <h4>Solusi dan Rekomendasi</h4>
                     <ul>
                         <li>Integrasi materi akhlak diri dalam kurikulum PAI.</li>
                         <li>Program pembinaan karakter dan mentoring harian.</li>
                         <li>Kolaborasi guru dan orang tua sebagai teladan.</li>
                         <li>Konseling psikologis berbasis nilai Islam.</li>
                     </ul>
-
-                    <h4>
-                        <b>Kesimpulan
-                    </b>
-                    </h4>
-                    <p>Akhlak terhadap diri sendiri adalah fondasi dalam pembentukan pribadi yang sehat secara rohani maupun sosial.
-                    Pendidikan Islam memiliki peran sentral dalam menanamkan nilai-nilai ini sejak dini, terutama di kalangan remaja.
-                    Studi kasus menunjukkan bahwa tantangan akhlak pribadi masih menjadi isu serius yang perlu penanganan sistematis melalui integrasi nilai Islam dalam kehidupan pendidikan.  
-                    </p>
-
-                    <h4>
-                        <b>Daftar Pustaka
-                    </b>
-                    </h4>
+                    <h4>Kesimpulan</h4>
+                    <p>Akhlak terhadap diri sendiri adalah fondasi dalam pembentukan pribadi yang sehat secara rohani maupun sosial. Pendidikan Islam memiliki peran sentral dalam menanamkan nilai-nilai ini sejak dini, terutama di kalangan remaja. Studi kasus menunjukkan bahwa tantangan akhlak pribadi masih menjadi isu serius yang perlu penanganan sistematis melalui integrasi nilai Islam dalam kehidupan pendidikan.</p>
+                    <h4>Daftar Pustaka</h4>
                     <ul>
                         <li>Al-Ghazali. <em>Ihya Ulumuddin</em>. Beirut: Darul Fikr, 2004.</li>
                         <li>Departemen Agama RI. <em>Al-Qur’an dan Terjemahannya.</em> Jakarta: PT Sygma, 2015.</li>
@@ -710,134 +648,138 @@
         </div>
     </section>
     
- <!-- Article Section3 -->
-    <section id="article">
+    <section id="article-3" style="background-color: #ffffff;">
         <div class="container">
-            <h2 class="section-title"> <b>Santri Korban Bullying Dibakar Senior di Ponpes</b></h2>
+            <h2 class="section-title">Santri Korban Bullying Dibakar Senior di Ponpes</h2>
             <div class="article-content">
                 <div class="article-body">
-                 <img src="article-pic.png" alt="article" class="article-content">
-                    <h4>Opini <b>"Bagaimana mestinya?"</b></h4>
-                    <p>
-                        Lingkungan pondok pesantren idealnya menjadi tempat yang aman, damai, dan penuh kasih sayang, di mana para santri bukan hanya diajarkan ilmu agama, tetapi juga dibentuk akhlaknya. Namun, jika pengawasan dan pembinaan tidak dilakukan dengan serius, kekerasan bisa tumbuh subur bahkan di tempat yang suci sekalipun.
-                    </p>
+                    <img src="article-pic.png" alt="Ilustrasi bullying" style="width:100%; border-radius:10px; margin-bottom:20px;">
+                    <h4>Opini "Bagaimana mestinya?"</h4>
+                    <p>Lingkungan pondok pesantren idealnya menjadi tempat yang aman, damai, dan penuh kasih sayang, di mana para santri bukan hanya diajarkan ilmu agama, tetapi juga dibentuk akhlaknya. Namun, jika pengawasan dan pembinaan tidak dilakukan dengan serius, kekerasan bisa tumbuh subur bahkan di tempat yang suci sekalipun.</p>
                     <ul>
-                        <li>
-                            Pertama, manajemen pondok pesantren harus bertanggung jawab penuh atas keselamatan seluruh santri. Ini mencakup pembentukan sistem pengawasan internal yang ketat, penerapan aturan anti-kekerasan secara jelas, dan pelatihan bagi pengasuh serta senior tentang pembinaan yang humanis dan edukatif.
-                        </li>
-                        <li>
-                            Kedua, budaya senioritas harus dikaji ulang. Memberikan otoritas kepada santri senior tanpa pengawasan berpotensi menciptakan hierarki kekuasaan yang menyimpang. Dalam sistem pendidikan Islam sekalipun, tidak ada tempat bagi kekerasan atas nama kedisiplinan.
-                        </li>
-                        <li>
-                            Ketiga, perlu adanya sistem pelaporan yang aman dan rahasia bagi korban. Santri yang mengalami atau menyaksikan kekerasan harus memiliki saluran untuk melapor tanpa takut dihukum atau diintimidasi. Lembaga pendidikan harus bekerja sama dengan psikolog dan aparat hukum untuk menangani kasus secara tuntas.
-                        </li>
-                        <li>
-                            Keempat, penegakan hukum terhadap pelaku dan pihak lalai harus dilakukan secara adil dan transparan. Ini penting untuk menciptakan efek jera dan memastikan kepercayaan masyarakat terhadap lembaga pendidikan tetap terjaga.
-                        </li>
+                        <li>Pertama, manajemen pondok pesantren harus bertanggung jawab penuh atas keselamatan seluruh santri. Ini mencakup pembentukan sistem pengawasan internal yang ketat, penerapan aturan anti-kekerasan secara jelas, dan pelatihan bagi pengasuh serta senior tentang pembinaan yang humanis dan edukatif.</li>
+                        <li>Kedua, budaya senioritas harus dikaji ulang. Memberikan otoritas kepada santri senior tanpa pengawasan berpotensi menciptakan hierarki kekuasaan yang menyimpang. Dalam sistem pendidikan Islam sekalipun, tidak ada tempat bagi kekerasan atas nama kedisiplinan.</li>
+                        <li>Ketiga, perlu adanya sistem pelaporan yang aman dan rahasia bagi korban. Santri yang mengalami atau menyaksikan kekerasan harus memiliki saluran untuk melapor tanpa takut dihukum atau diintimidasi. Lembaga pendidikan harus bekerja sama dengan psikolog dan aparat hukum untuk menangani kasus secara tuntas.</li>
+                        <li>Keempat, penegakan hukum terhadap pelaku dan pihak lalai harus dilakukan secara adil dan transparan. Ini penting untuk menciptakan efek jera dan memastikan kepercayaan masyarakat terhadap lembaga pendidikan tetap terjaga.</li>
                     </ul>
-                    <h4>
-                        <b>Penutup
-                        </b>
-                    </h4>
-                    <p>
-                        Kejadian memilukan ini menjadi pelajaran penting bahwa pendidikan yang berorientasi pada moral dan spiritual pun tidak imun dari kekerasan jika tidak disertai dengan tata kelola yang baik. Pondok pesantren harus terus berbenah, membuka diri terhadap evaluasi, dan menempatkan keselamatan serta kesejahteraan santri sebagai prioritas utama.
-                    </p>
-                    </div>
+                    <h4>Penutup</h4>
+                    <p>Kejadian memilukan ini menjadi pelajaran penting bahwa pendidikan yang berorientasi pada moral dan spiritual pun tidak imun dari kekerasan jika tidak disertai dengan tata kelola yang baik. Pondok pesantren harus terus berbenah, membuka diri terhadap evaluasi, dan menempatkan keselamatan serta kesejahteraan santri sebagai prioritas utama.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Article Section4 -->
-<div class="container">
-<h2 class="section-title"> <b>Perspektif Muslim tentang Kehidupan Berbangsa dan Bernegara</b></h2>
-<div class="article-content">
-<div class="article-body">
-    <h3>a. Dasar-dasar Kehidupan Berbangsa dan Bernegara dalam Sudut Pandang Islam</h3>
+    <section id="article-4" style="background-color: #eef2f7;">
+        <div class="container">
+            <h2 class="section-title">Perspektif Muslim tentang Kehidupan Berbangsa dan Bernegara</h2>
+            <div class="article-content">
+                <div class="article-body">
+                    <h3>a. Dasar-dasar Kehidupan Berbangsa dan Bernegara dalam Sudut Pandang Islam</h3>
+                    <h4>1. Tauḥīd dan Persatuan Umat</h4>
+                    <p>Islam menegaskan prinsip tauḥīd (keesaan Allah) yang mendorong ukhuwah (persaudaraan) antarmanusia tanpa memandang suku, bangsa, atau status sosial.</p>
+                    <blockquote>“Sesungguhnya orang-orang mukmin adalah bersaudara…” (QS. al-Hujurāt: 10)</blockquote>
+                    <p>Prinsip ini menjadi landasan persatuan nasional, bahwa setiap warga negara memiliki hak dan kewajiban yang sama dalam membangun negeri.</p>
+                    <h4>2. Keadilan (‘Adl) sebagai Landasan Negara</h4>
+                    <p>Islam mengajarkan keadilan sebagai salah satu maqāṣid syarī‘ah (tujuan syariat). Negara ideal menurut Islam adalah negara yang menegakkan keadilan, melindungi hak asasi, dan menjamin kesejahteraan rakyat.</p>
+                    <blockquote>“Tegakkanlah keadilan, karena keadilan itu dekat dengan ketakwaan.” (HR. Ahmad)</blockquote>
+                    <h4>3. Musyāwarah (Konsultasi) dan Syūrah</h4>
+                    <p>Pengambilan keputusan secara musyawarah (syūrah) merupakan ciri pemerintahan Islam. Hal ini mendukung demokrasi modern di mana aspirasi rakyat diakomodasi.</p>
+                    <blockquote>“…dan bermusyawarahlah kamu dalam urusan itu…” (QS. Āli ‘Imrān: 159)</blockquote>
+                    
+                    <h3>b. Akhlak Seorang Muslim dalam Berbangsa dan Bernegara</h3>
+                    <h4>1. Amanah (Kepercayaan)</h4>
+                    <p>Setiap muslim wajib menunaikan amanah—baik dalam jabatan publik maupun sebagai warga negara. Akhlak ini mencakup kejujuran pemilu, ketepatan administrasi, dan tanggung jawab sosial.</p>
+                    <h4>2. Ṣabr (Kesabaran) dan Tawāṣul bish Ṣabr</h4>
+                    <p>Dalam menghadapi tantangan nasional, setiap muslim harus bersabar dan saling menyemangati untuk tetap teguh dalam kebaikan. Kesabaran menumbuhkan ketahanan bangsa.</p>
+                    <h4>3. Iḥsān (Berbuat Baik)</h4>
+                    <p>Berbuat ihsān berarti melampaui kebaikan minimal—misalnya aktif bekerja untuk kepentingan umum, membantu korban bencana, atau ikut serta dalam program kemasyarakatan.</p>
+                    
+                    <h3>c. Pilar Kehidupan Berbangsa dan Bernegara di Indonesia dalam Sudut Pandang Islam</h3>
+                    <h4>1. Pancasila dan Tauhid</h4>
+                    <p>Sila Ketuhanan Yang Maha Esa menegaskan bahwa Indonesia mengakui keesaan Allah. Bagi muslim, sila ini sejalan dengan prinsip tauḥīd.</p>
+                    <h4>2. Kemanusiaan yang Adil dan Beradab</h4>
+                    <p>Islam menempatkan penghormatan terhadap kemanusiaan sebagai nilai tinggi:</p>
+                    <blockquote>“Dan Kami muliakan anak-anak Adam…” (QS. al-Isra’: 70)</blockquote>
+                    <p>Hal ini sejalan dengan sila kedua.</p>
+                    <h4>3. Persatuan Indonesia</h4>
+                    <p>Ukhuwah Islamiyah memupuk semangat persatuan, sedangkan sila ketiga menekankan persatuan nasional tanpa diskriminasi.</p>
+                    <h4>4. Kerakyatan yang Dipimpin oleh Hikmah Kebijaksanaan dalam Permusyawaratan/Perwakilan</h4>
+                    <p>Syūrah dalam Islam melengkapi prinsip demokrasi Pancasila, di mana keputusan diambil dengan dialog dan perwakilan yang adil.</p>
+                    <h4>5. Keadilan Sosial bagi Seluruh Rakyat Indonesia</h4>
+                    <p>Islam memerintahkan distribusi kekayaan melalui zakat, sedekah, dan wakaf untuk mencapai kesejahteraan bersama, sejalan dengan sila kelima.</p>
+                    
+                    <h3>d. Toleransi dalam Beragama</h3>
+                    <h4>1. Dasar Al-Qur’āniyyah tentang Toleransi</h4>
+                    <blockquote>“Tidak ada paksaan dalam agama…” (QS. al-Baqarah: 256)</blockquote>
+                    <p>Ayat ini menjadi landasan hak setiap warga negara untuk memilih dan menjalankan keyakinannya.</p>
+                    <h4>2. Sunnah Nabi ﷺ tentang Toleransi</h4>
+                    <p>Nabi Muhammad ﷺ tidak pernah memaksakan Islam kepada non-muslim, bahkan menjaga hak-hak mereka sebagai bagian dari kontrak sosial Madinah.</p>
+                    <h4>3. Implementasi Toleransi di Indonesia</h4>
+                    <p>Kehidupan berbangsa menuntut setiap muslim menghormati hari besar agama lain, melindungi rumah ibadah, dan menjalin kerja sama lintas iman demi kebaikan bersama.</p>
+                    <h4>4. Peran Masyarakat dan Negara</h4>
+                    <p>Negara wajib menjamin kebebasan beragama, sementara masyarakat muslim disiplin dalam menghormati perbedaan. Melalui dakwah bil-hikmah (metode santun), umat Islam dapat berbagi kebaikan tanpa menimbulkan konflik.</p>
+
+                    <h3>Penutup</h3>
+                    <p>Dalam membangun kehidupan berbangsa dan bernegara, seorang muslim harus berpegang teguh pada prinsip Islam: tauḥīd, keadilan, akhlak mulia, serta mengedepankan musyawarah dan toleransi. Nilai-nilai tersebut selaras dengan pilar Pancasila, menjadikan Indonesia sebagai negeri yang rukun, adil, makmur, dan bermartabat—sebuah visi yang diridhai Allah ﷻ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="article-5" style="background-color: #ffffff;">
+        <div class="container">
+            <h2 class="section-title">Implementasi Akhlak Mulia di Lingkungan Sosial</h2>
+            <div class="article-content">
+                <div class="article-body">
+                    <h4>Abstrak</h4>
+                    <p>Akhlak merupakan landasan utama dalam membentuk kepribadian dan moral individu dalam kehidupan bermasyarakat. Artikel ini membahas bagaimana implementasi akhlak mulia dalam lingkungan sosial dapat menciptakan masyarakat yang harmonis, toleran, dan produktif. Melalui pendekatan Islam sebagai agama yang rahmatan lil ‘alamin, dijelaskan bahwa akhlak baik tidak hanya mencakup hubungan manusia dengan Tuhan, tetapi juga manusia dengan sesama dan alam sekitar. Penelitian ini dilakukan melalui studi pustaka dan observasi sederhana terhadap perilaku masyarakat di lingkungan perkotaan.</p>
+
+                    <h4>Pendahuluan</h4>
+                    <p>Pendidikan agama bukan hanya soal ritual ibadah, tetapi juga mencakup pembentukan karakter melalui akhlak. Rasulullah SAW bersabda: “Sesungguhnya aku diutus untuk menyempurnakan akhlak yang mulia” (HR. Ahmad). Dari hadits ini, jelas bahwa Islam sangat menekankan pentingnya akhlak dalam kehidupan sehari-hari. Di era modern ini, tantangan moral makin kompleks, sehingga implementasi akhlak di lingkungan menjadi sangat penting untuk dikaji dan diterapkan.</p>
+
+                    <h4>Pembahasan</h4>
+                    
+                    <h5>1. Definisi Akhlak dalam Islam</h5>
+                    <p>Akhlak berasal dari bahasa Arab “khuluq” yang berarti tabiat atau kebiasaan. Dalam Islam, akhlak adalah perilaku yang lahir dari hati yang bersih dan sesuai dengan syariat. Contohnya: jujur, sabar, amanah, menghormati orang lain, dan menjaga lingkungan.</p>
+
+                    <h5>2. Akhlak terhadap Sesama Manusia</h5>
+                    <ul>
+                        <li><strong>Jujur dan Amanah:</strong> Membiasakan kejujuran dalam lingkungan, baik di kampus, keluarga, maupun tempat kerja akan membentuk kepercayaan sosial.</li>
+                        <li><strong>Toleransi:</strong> Menghargai perbedaan suku, agama, dan budaya menciptakan suasana damai.</li>
+                        <li><strong>Saling Tolong-Menolong:</strong> Sesuai QS. Al-Ma’idah ayat 2, tolong-menolong dalam kebaikan merupakan bentuk nyata dari akhlak Islami.</li>
+                    </ul>
+
+                    <h5>3. Akhlak terhadap Lingkungan Alam</h5>
+                    <p>Islam mengajarkan bahwa manusia adalah khalifah di bumi (QS. Al-Baqarah: 30). Menjaga kebersihan, tidak membuang sampah sembarangan, hemat energi, dan peduli terhadap kelestarian alam adalah bentuk akhlak terhadap lingkungan yang harus ditanamkan sejak dini.</p>
+
+                    <h5>4. Studi Kasus: Akhlak di Lingkungan Perkotaan</h5>
+                    <p>Dalam kehidupan perkotaan, tantangan moral seperti individualisme, materialisme, dan minimnya kepedulian sosial dapat dikurangi dengan menerapkan akhlak Islami. Contohnya, gerakan warga yang rutin melakukan gotong royong dan sedekah sampah (menukar sampah dengan amal) menjadi bukti nyata dari penerapan akhlak sosial.</p>
+
+                    <h4>Kesimpulan</h4>
+                    <p>Implementasi akhlak yang baik dalam lingkungan sangat berperan penting dalam menciptakan masyarakat yang sehat secara moral dan sosial. Islam telah memberikan panduan lengkap dalam membina akhlak mulia. Mahasiswa sebagai agen perubahan harus menjadi teladan dalam menerapkan akhlak ini di berbagai lini kehidupan, baik dalam skala individu maupun masyarakat.</p>
+
+                    <h4>Daftar Pustaka</h4>
+                    <ul>
+                        <li>Al-Qur'an dan Terjemahannya. Kementerian Agama RI.</li>
+                        <li>Al-Ghazali, Iḥyā’ ‘Ulūm ad-Dīn.</li>
+                        <li>Yusuf Al-Qaradawi, Etika Islam.</li>
+                        <li>Departemen Agama RI. (2002). Akhlak untuk Mahasiswa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <h4>1. Tauḥīd dan Persatuan Umat</h4>
-    <p>Islam menegaskan prinsip tauḥīd (keesaan Allah) yang mendorong ukhuwah (persaudaraan) antarmanusia tanpa memandang suku, bangsa, atau status sosial.</p>
-    <blockquote>“Sesungguhnya orang-orang mukmin adalah bersaudara…” (QS. al-Hujurāt: 10)</blockquote>
-    <p>Prinsip ini menjadi landasan persatuan nasional, bahwa setiap warga negara memiliki hak dan kewajiban yang sama dalam membangun negeri.</p>
-
-    <h4>2. Keadilan (‘Adl) sebagai Landasan Negara</h4>
-    <p>Islam mengajarkan keadilan sebagai salah satu maqāṣid syarī‘ah (tujuan syariat). Negara ideal menurut Islam adalah negara yang menegakkan keadilan, melindungi hak asasi, dan menjamin kesejahteraan rakyat.</p>
-    <blockquote>“Tegakkanlah keadilan, karena keadilan itu dekat dengan ketakwaan.” (HR. Ahmad)</blockquote>
-
-    <h4>3. Musyāwarah (Konsultasi) dan Syūrah</h4>
-    <p>Pengambilan keputusan secara musyawarah (syūrah) merupakan ciri pemerintahan Islam. Hal ini mendukung demokrasi modern di mana aspirasi rakyat diakomodasi.</p>
-    <blockquote>“…dan bermusyawarahlah kamu dalam urusan itu…” (QS. Āli ‘Imrān: 159)</blockquote>
-  </section>
-
-  <section>
-    <h3>b. Akhlak Seorang Muslim dalam Berbangsa dan Bernegara</h3>
-
-    <h4>1. Amanah (Kepercayaan)</h4>
-    <p>Setiap muslim wajib menunaikan amanah—baik dalam jabatan publik maupun sebagai warga negara. Akhlak ini mencakup kejujuran pemilu, ketepatan administrasi, dan tanggung jawab sosial.</p>
-
-    <h4>2. Ṣabr (Kesabaran) dan Tawāṣul bish Ṣabr</h4>
-    <p>Dalam menghadapi tantangan nasional, setiap muslim harus bersabar dan saling menyemangati untuk tetap teguh dalam kebaikan. Kesabaran menumbuhkan ketahanan bangsa.</p>
-
-    <h4>3. Iḥsān (Berbuat Baik)</h4>
-    <p>Berbuat ihsān berarti melampaui kebaikan minimal—misalnya aktif bekerja untuk kepentingan umum, membantu korban bencana, atau ikut serta dalam program kemasyarakatan.</p>
-  </section>
-
-  <section>
-    <h3>c. Pilar Kehidupan Berbangsa dan Bernegara di Indonesia dalam Sudut Pandang Islam</h3>
-
-    <h4>1. Pancasila dan Tauhid</h4>
-    <p>Sila Ketuhanan Yang Maha Esa menegaskan bahwa Indonesia mengakui keesaan Allah. Bagi muslim, sila ini sejalan dengan prinsip tauḥīd.</p>
-
-    <h4>2. Kemanusiaan yang Adil dan Beradab</h4>
-    <p>Islam menempatkan penghormatan terhadap kemanusiaan sebagai nilai tinggi:</p>
-    <blockquote>“Dan Kami muliakan anak-anak Adam…” (QS. al-Isra’: 70)</blockquote>
-    <p>Hal ini sejalan dengan sila kedua.</p>
-
-    <h4>3. Persatuan Indonesia</h4>
-    <p>Ukhuwah Islamiyah memupuk semangat persatuan, sedangkan sila ketiga menekankan persatuan nasional tanpa diskriminasi.</p>
-
-    <h4>4. Kerakyatan yang Dipimpin oleh Hikmah Kebijaksanaan dalam Permusyawaratan/Perwakilan</h4>
-    <p>Syūrah dalam Islam melengkapi prinsip demokrasi Pancasila, di mana keputusan diambil dengan dialog dan perwakilan yang adil.</p>
-
-    <h4>5. Keadilan Sosial bagi Seluruh Rakyat Indonesia</h4>
-    <p>Islam memerintahkan distribusi kekayaan melalui zakat, sedekah, dan wakaf untuk mencapai kesejahteraan bersama, sejalan dengan sila kelima.</p>
-  </section>
-
-  <section>
-    <h3>d. Toleransi dalam Beragama</h3>
-
-    <h4>1. Dasar Al-Qur’āniyyah tentang Toleransi</h4>
-    <blockquote>“Tidak ada paksaan dalam agama…” (QS. al-Baqarah: 256)</blockquote>
-    <p>Ayat ini menjadi landasan hak setiap warga negara untuk memilih dan menjalankan keyakinannya.</p>
-
-    <h4>2. Sunnah Nabi ﷺ tentang Toleransi</h4>
-    <p>Nabi Muhammad ﷺ tidak pernah memaksakan Islam kepada non-muslim, bahkan menjaga hak-hak mereka sebagai bagian dari kontrak sosial Madinah.</p>
-
-    <h4>3. Implementasi Toleransi di Indonesia</h4>
-    <p>Kehidupan berbangsa menuntut setiap muslim menghormati hari besar agama lain, melindungi rumah ibadah, dan menjalin kerja sama lintas iman demi kebaikan bersama.</p>
-
-    <h4>4. Peran Masyarakat dan Negara</h4>
-    <p>Negara wajib menjamin kebebasan beragama, sementara masyarakat muslim disiplin dalam menghormati perbedaan. Melalui dakwah bil-hikmah (metode santun), umat Islam dapat berbagi kebaikan tanpa menimbulkan konflik.</p>
-  </section>
-
-  <section>
-    <h3>Penutup</h3>
-    <p>Dalam membangun kehidupan berbangsa dan bernegara, seorang muslim harus berpegang teguh pada prinsip Islam: tauḥīd, keadilan, akhlak mulia, serta mengedepankan musyawarah dan toleransi. Nilai-nilai tersebut selaras dengan pilar Pancasila, menjadikan Indonesia sebagai negeri yang rukun, adil, makmur, dan bermartabat—sebuah visi yang diridhai Allah ﷻ.</p>
-  </section>
-    </article>
-    
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p class="footer-text">© 2025 Noval Suprayoga. Semua Hak Dilindungi.</p>
             <div class="social-links">
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/novalsuprayoga/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Supramennn"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/novalsuprayoga/"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:novalsuprayoga2511@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
+                <a href="https://www.linkedin.com/in/novalsuprayoga/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Supramennn"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/novalsuprayoga/"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:novalsuprayoga2511@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-            <p>Dibuat dengan <i class="fas fa-heart"></i> oleh Noval Suprayoga</p>
+            <p>Dibuat dengan <i class="fas fa-heart" style="color: #ff4757;"></i> oleh Noval Suprayoga</p>
         </div>
     </footer>
 
